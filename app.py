@@ -8,7 +8,7 @@ from bokeh.plotting import figure
 from bokeh.models import ColumnDataSource, HoverTool, CustomJS
 from bokeh.models.widgets import Button
 from bokeh.embed import components
-import numpy as np
+#import numpy as np
 import matplotlib.pyplot as plt
 from goodreads import client
 
@@ -510,7 +510,7 @@ def user(usrid):
     book8=user_recom.loc[user_recom['userID']==U]['book8'].values
     book9=user_recom.loc[user_recom['userID']==U]['book9'].values
     book10=user_recom.loc[user_recom['userID']==U]['book10'].values
-    '''
+    
     bimg1=books.loc[books['bookID']==book1[0]]['imageUrlM'].values[0]
     bimg2=books.loc[books['bookID']==book2[0]]['imageUrlM'].values[0]
     bimg3=books.loc[books['bookID']==book3[0]]['imageUrlM'].values[0]
@@ -521,7 +521,7 @@ def user(usrid):
     bimg8=books.loc[books['bookID']==book8[0]]['imageUrlM'].values[0]
     bimg9=books.loc[books['bookID']==book9[0]]['imageUrlM'].values[0]
     bimg10=books.loc[books['bookID']==book10[0]]['imageUrlM'].values[0]
-    '''
+    
     bisbn1=books.loc[books['bookID']==book1[0]]['ISBN'].values[0]
     bisbn2=books.loc[books['bookID']==book2[0]]['ISBN'].values[0]
     bisbn3=books.loc[books['bookID']==book3[0]]['ISBN'].values[0]
@@ -533,7 +533,7 @@ def user(usrid):
     bisbn9=books.loc[books['bookID']==book9[0]]['ISBN'].values[0]
     bisbn10=books.loc[books['bookID']==book10[0]]['ISBN'].values[0]
 
-    
+    '''
     bimg1='http://covers.openlibrary.org/b/isbn/'+str(bisbn1).strip()+'-M.jpg'
     bimg2='http://covers.openlibrary.org/b/isbn/'+str(bisbn2).strip()+'-M.jpg'
     bimg3='http://covers.openlibrary.org/b/isbn/'+str(bisbn3).strip()+'-M.jpg'
@@ -544,7 +544,7 @@ def user(usrid):
     bimg8='http://covers.openlibrary.org/b/isbn/'+str(bisbn8).strip()+'-M.jpg'
     bimg9='http://covers.openlibrary.org/b/isbn/'+str(bisbn9).strip()+'-M.jpg'
     bimg10='http://covers.openlibrary.org/b/isbn/'+str(bisbn10).strip()+'-M.jpg'
-    
+    '''
 
     btit1=str(books.loc[books['bookID']==book1[0]]['bookTitle'].values[0])
     btit2=str(books.loc[books['bookID']==book2[0]]['bookTitle'].values[0])
