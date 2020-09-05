@@ -1,0 +1,9 @@
+matplotlib
+requests
+flask
+jinja2
+gunicorn
+pandas
+bokeh
+numpy
+goodreads

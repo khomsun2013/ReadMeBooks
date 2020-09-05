@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Skeleton application demoing Heroku and Flask integration.">
+    <meta name="author" content="@gotoariel">
+    <title>List of Book A</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-left">
+          <h2>The Books List of Caterogy A</h2>
+          <br>
+          <ul>
+            <form action="/book" method="POST">
+            <label for ="book">Choose The Book: </label>
+            <select name="book" id="book">
+              {% for item in data %}
+              <option value={{item[0]}}>{{item[1]}}</option>
+              {% endfor %}
+            </select>
+            <br>
+            <!--input type="checkbox" name="Open" value="1" checked>
+            <label for="Open"> Open Price</label><br>
+            <input type="checkbox" name="High" value="2" checked>
+            <label for="High"> High Price</label><br>
+            <input type="checkbox" name="Low" value="3" checked>
+            <label for="Low"> Low Price</label><br>
+            <input type="checkbox" name="Close" value="4" checked>
+            <label for="Close"> Close Price</label><br-->
+            <input type="submit" value="Submit">
+            </form>
+          </ul>
+          <br>
+          <ul><a href="/"><h4>Home</h4></a></ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

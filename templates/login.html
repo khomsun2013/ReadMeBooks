@@ -1,0 +1,216 @@
+<html>
+  <head>
+    <title>login page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <ul><a href="/"><h4>Home</h4></a></ul>
+      <br>
+      <form action="" method="post">
+        <input type="text" placeholder="Username" name="username" value="{{
+          request.form.username }}">
+         <input type="password" placeholder="Password" name="password" value="{{
+          request.form.password }}">
+        <input class="btn btn-default" type="submit" value="Login">
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}</p>
+      {% endif %}
+    </div>
+      <br>
+      <br>
+      <center> 
+      <h3>Please using any Sample UserIds below as the Username and Password.</h3>
+      <h4>Note: Username and Password are the same.</h4>
+      <br>
+      <h4>Example:   Username = 6251 and Password = 6251 </h4>
+      <br>
+      </center>
+      <table align="center">
+      <tr>
+      <td>2033&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>2110&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>2276&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>4017&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>4385&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>5582&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>6242&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>6251&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>6543&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>6575&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>7286&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>7346</td>
+      </tr>
+      <tr>
+      <td>8067&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>8245&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>8681&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>8890&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>10560&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>11676&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>11993&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>12538&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>12824&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>12982&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>13552&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>13850</td>
+      </tr>
+      <tr>
+      <td>14422&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>15408&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>15418&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>16634&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>16795&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>16966&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>17950&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>19085&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>21014&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>23768&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>23872&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>23902</td>
+      </tr>
+      <tr>
+      <td>25409&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>25601&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>25981&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>26535&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>26544&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>26583&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>28591&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>28634&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>29259&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>30276&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>30511&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>30711</td>
+      </tr>
+      <tr>
+      <td>30735&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>30810&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>31315&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>31556&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>31826&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>32773&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>33145&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>35433&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>35836&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>35857&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>35859&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>36299</td>
+      </tr>
+      <tr>
+      <td>36554&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>36606&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>36609&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>36836&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>36907&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>37644&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>37712&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>37950&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>38023&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>38273&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>38281&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>39281</td>
+      </tr>
+      <tr>
+      <td>39467&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>40889&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>40943&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>43246&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>43910&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>46398&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>47316&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>48025&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>48494&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>49144&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>49889&nbsp;&nbsp;,&nbsp;&nbsp;</td>
+      <td>51883</td>  
+      </tr>
+      </table>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}</p>
+      {% endif %}
+    <!--/div-->
+  </body>
+</html>    
+<!--
+52199
+52350
+52584
+52614
+52917
+53220
+55187
+55490
+55492
+56271
+56399
+56447
+56554
+56959
+59172
+60244
+60337
+60707
+63714
+63956
+65258
+66942
+67840
+68555
+69078
+69389
+69697
+70415
+70594
+70666
+72352
+73681
+75591
+75819
+76151
+76223
+76499
+76626
+78553
+78783
+78834
+78973
+79441
+81492
+81560
+83287
+83637
+83671
+85526
+85656
+86189
+86947
+87141
+87555
+88283
+88677
+88693
+88733
+89602
+91113
+92652
+92810
+93047
+93363
+93629
+94242
+94347
+94853
+94951
+95010
+95359
+95902
+95932
+96448
+97754
+97874
+98391
+98758-->

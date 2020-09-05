@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>about the project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <center> 
+      <h1>About Our Project</h1>
+      </center>
+      <ul><a href="/"><h4>Home</h4></a></ul>
+      </center>
+      <br>
+      <h4>There are millions of books in the world, written in hundreds of different languages, filled with stories of adventures, mysteries, science, facts, and so much more. The problem with so many books is that it can be quite difficult to choose the right one because while there are millions of stories to read, not all might fit a reader’s preference, since every reader has their own personalized style and taste. Therefore, how do you tell if you will like a book before you even read it? Well, you can’t judge a book by its cover nor will you want to waste time reading an entire book just to realize that you didn’t like it. This can become quite an issue when it comes to choosing a book to read, may it be a new book in a new genre or a book similar to one you love. Therefore, we propose a book recommendation system based on data set (<a href="https://github.com/XuefengHuang/RecommendationSystem/tree/master/datasets/BX-CSV-Dump">BX-CSV-Dump</a>).</h4>
+      <br>
+      <h3>Objective:</h3>
+      <h4>1. Create the book recommendation system based on Users and Books Rating.</h4>
+      <h4>2. Develop the web application using Machine Learning Techniques such as KNN-NearestNeighbors based on Users and Books Rating, and Word2Vec Model.</h4>
+      <h4>3. Provide the recommend books for the users based on the users rating dataset.</h4>
+      <h4>4. Present the similar books that are related to the book.</h4>
+      <h4>5. Exhibit the pilot project that apply the Machine Learning Technique for any recommendation systems.</h4>
+      <h4>6. This project will the business to make more revenue, because the results from the recommendation are high accuracy.</h4>
+      <br>
+      <h3>Who are get the benifits from the project:</h3>
+      <h4>1. The general users who are members of the Book recommendation system.</h4>
+      <h4>2. The new users, typical person who are interesting and want to get the recommendations from the project.</h4>
+      <h4>3. The wormbooks who are interesting for discovering the similar books and recommend books from the project.</h4>
+      <h4>4. The business organization that want to create or improve their recommendation system.</h4>
+      <br>
+      <h3>Data Ingestion:</h3>
+      <h4>This project is using the data set from BX-CSV-Dump (<a href="https://github.com/XuefengHuang/RecommendationSystem/tree/master/datasets/BX-CSV-Dump">BX-CSV-Dump</a>) and (<a href="https://www.kaggle.com/ngannkim/bxcsvdump/version/1">Kaggle BX-CSV-Dump</a>) contains:</h4>
+      <h4>1. BX-Users.csv</h4>
+      <h4>2. BX-Books.csv</h4>
+      <h4>3. BX-Book-Ratings.csv</h4>
+      <h4>The Primary User Ratings Chart is provided below</h4>
+      <img src="{{ url_for('static',filename='AllUsers_Rating.png') }}">
+      <br>
+      <h3>Machine Learning Techiques:</h3>
+      <h4>1. KNN-NearestNeighbors based on User Ratings. The system will find the recommendation books by search the users who have the similar ratings. Since the users who are similar should like the similar books. Hence the system will gather the books from similar users provide to the user by using Cosine or Correlation values.</h4>
+      <h4>2. Word2Vec Model. The project apply the Word2Vec technique to search the similar books by generate vector for each bookId. And also calculate the similar books by compare the vectors.</h4>
+      <br>
+      <h3>Tools:</h3>
+      <h4>1. Flask-Python Web Application Framework</h4>
+      <h4>2. NearestNeighbors from scikit learn</h4>
+      <h4>3. Pandas</h4>
+      <h4>4. Word2Vec from Gensim Model</h4>
+      <h4>5. Jupyster Notebook</h4>
+      <h4>6. Heroku</h4>
+      <h4>7. GitHub</h4> 
+      </center>
+    </div>
+  </body>
+</html>    

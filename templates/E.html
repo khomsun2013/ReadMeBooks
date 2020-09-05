@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: red;  /*rgba(1, 1, 1, 0.8);*/
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+
+<body>
+
+
+<h2 style="text-align:center">Books Gallery</h2>
+<ul><a href="/"><h4>Home</h4></a></ul>
+<div class="container">
+<div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_0007133103.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_0020136609.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_0020154402.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_0020315910.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_0020854501.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_0024182001.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_006000469X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_0060004703.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_0060005009.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_0060005025.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_0060008784.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_006095647X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_006101432X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_006104296X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_006109207X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_014005829X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_014050639X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_015201036X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_015600464X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_030700645X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_031208188X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_031227999X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_031286129X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_031286860X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_031298670X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_034071879X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_034537682X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_037303699X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_037307963X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_037324195X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_037327274X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_037361926X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_037602237X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_038079439X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_038080123X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_038081093X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_038533673X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_038548755X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_038549744X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_039914255X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_039914613X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_039952276X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_042518742X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_043912042X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_044100556X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_044920099X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_048627733X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_050552287X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_051788433X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_055315723X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_055323370X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_055329024X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_055334949X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_055356658X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_055384007X.png') }}" style="width:25%"></div><div class="mySlides"><img class="center" src="{{ url_for('static',filename='E/E_059050391X.png') }}" style="width:25%"></div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    <div class="caption-container">
+    <p id="caption"></p>
+    </div>
+    <div class="column"><img alt="0007133103" class="demo cursor" onclick="currentSlide(1)" src="{{ url_for('static',filename='E/E_0007133103.png') }}" style="width:100%"></div><div class="column"><img alt="0020136609" class="demo cursor" onclick="currentSlide(2)" src="{{ url_for('static',filename='E/E_0020136609.png') }}" style="width:100%"></div><div class="column"><img alt="0020154402" class="demo cursor" onclick="currentSlide(3)" src="{{ url_for('static',filename='E/E_0020154402.png') }}" style="width:100%"></div><div class="column"><img alt="0020315910" class="demo cursor" onclick="currentSlide(4)" src="{{ url_for('static',filename='E/E_0020315910.png') }}" style="width:100%"></div><div class="column"><img alt="0020854501" class="demo cursor" onclick="currentSlide(5)" src="{{ url_for('static',filename='E/E_0020854501.png') }}" style="width:100%"></div><div class="column"><img alt="0024182001" class="demo cursor" onclick="currentSlide(6)" src="{{ url_for('static',filename='E/E_0024182001.png') }}" style="width:100%"></div><div class="column"><img alt="006000469X" class="demo cursor" onclick="currentSlide(7)" src="{{ url_for('static',filename='E/E_006000469X.png') }}" style="width:100%"></div><div class="column"><img alt="0060004703" class="demo cursor" onclick="currentSlide(8)" src="{{ url_for('static',filename='E/E_0060004703.png') }}" style="width:100%"></div><div class="column"><img alt="0060005009" class="demo cursor" onclick="currentSlide(9)" src="{{ url_for('static',filename='E/E_0060005009.png') }}" style="width:100%"></div><div class="column"><img alt="0060005025" class="demo cursor" onclick="currentSlide(10)" src="{{ url_for('static',filename='E/E_0060005025.png') }}" style="width:100%"></div><div class="column"><img alt="0060008784" class="demo cursor" onclick="currentSlide(11)" src="{{ url_for('static',filename='E/E_0060008784.png') }}" style="width:100%"></div><div class="column"><img alt="006095647X" class="demo cursor" onclick="currentSlide(12)" src="{{ url_for('static',filename='E/E_006095647X.png') }}" style="width:100%"></div><div class="column"><img alt="006101432X" class="demo cursor" onclick="currentSlide(13)" src="{{ url_for('static',filename='E/E_006101432X.png') }}" style="width:100%"></div><div class="column"><img alt="006104296X" class="demo cursor" onclick="currentSlide(14)" src="{{ url_for('static',filename='E/E_006104296X.png') }}" style="width:100%"></div><div class="column"><img alt="006109207X" class="demo cursor" onclick="currentSlide(15)" src="{{ url_for('static',filename='E/E_006109207X.png') }}" style="width:100%"></div><div class="column"><img alt="014005829X" class="demo cursor" onclick="currentSlide(16)" src="{{ url_for('static',filename='E/E_014005829X.png') }}" style="width:100%"></div><div class="column"><img alt="014050639X" class="demo cursor" onclick="currentSlide(17)" src="{{ url_for('static',filename='E/E_014050639X.png') }}" style="width:100%"></div><div class="column"><img alt="015201036X" class="demo cursor" onclick="currentSlide(18)" src="{{ url_for('static',filename='E/E_015201036X.png') }}" style="width:100%"></div><div class="column"><img alt="015600464X" class="demo cursor" onclick="currentSlide(19)" src="{{ url_for('static',filename='E/E_015600464X.png') }}" style="width:100%"></div><div class="column"><img alt="030700645X" class="demo cursor" onclick="currentSlide(20)" src="{{ url_for('static',filename='E/E_030700645X.png') }}" style="width:100%"></div><div class="column"><img alt="031208188X" class="demo cursor" onclick="currentSlide(21)" src="{{ url_for('static',filename='E/E_031208188X.png') }}" style="width:100%"></div><div class="column"><img alt="031227999X" class="demo cursor" onclick="currentSlide(22)" src="{{ url_for('static',filename='E/E_031227999X.png') }}" style="width:100%"></div><div class="column"><img alt="031286129X" class="demo cursor" onclick="currentSlide(23)" src="{{ url_for('static',filename='E/E_031286129X.png') }}" style="width:100%"></div><div class="column"><img alt="031286860X" class="demo cursor" onclick="currentSlide(24)" src="{{ url_for('static',filename='E/E_031286860X.png') }}" style="width:100%"></div><div class="column"><img alt="031298670X" class="demo cursor" onclick="currentSlide(25)" src="{{ url_for('static',filename='E/E_031298670X.png') }}" style="width:100%"></div><div class="column"><img alt="034071879X" class="demo cursor" onclick="currentSlide(26)" src="{{ url_for('static',filename='E/E_034071879X.png') }}" style="width:100%"></div><div class="column"><img alt="034537682X" class="demo cursor" onclick="currentSlide(27)" src="{{ url_for('static',filename='E/E_034537682X.png') }}" style="width:100%"></div><div class="column"><img alt="037303699X" class="demo cursor" onclick="currentSlide(28)" src="{{ url_for('static',filename='E/E_037303699X.png') }}" style="width:100%"></div><div class="column"><img alt="037307963X" class="demo cursor" onclick="currentSlide(29)" src="{{ url_for('static',filename='E/E_037307963X.png') }}" style="width:100%"></div><div class="column"><img alt="037324195X" class="demo cursor" onclick="currentSlide(30)" src="{{ url_for('static',filename='E/E_037324195X.png') }}" style="width:100%"></div><div class="column"><img alt="037327274X" class="demo cursor" onclick="currentSlide(31)" src="{{ url_for('static',filename='E/E_037327274X.png') }}" style="width:100%"></div><div class="column"><img alt="037361926X" class="demo cursor" onclick="currentSlide(32)" src="{{ url_for('static',filename='E/E_037361926X.png') }}" style="width:100%"></div><div class="column"><img alt="037602237X" class="demo cursor" onclick="currentSlide(33)" src="{{ url_for('static',filename='E/E_037602237X.png') }}" style="width:100%"></div><div class="column"><img alt="038079439X" class="demo cursor" onclick="currentSlide(34)" src="{{ url_for('static',filename='E/E_038079439X.png') }}" style="width:100%"></div><div class="column"><img alt="038080123X" class="demo cursor" onclick="currentSlide(35)" src="{{ url_for('static',filename='E/E_038080123X.png') }}" style="width:100%"></div><div class="column"><img alt="038081093X" class="demo cursor" onclick="currentSlide(36)" src="{{ url_for('static',filename='E/E_038081093X.png') }}" style="width:100%"></div><div class="column"><img alt="038533673X" class="demo cursor" onclick="currentSlide(37)" src="{{ url_for('static',filename='E/E_038533673X.png') }}" style="width:100%"></div><div class="column"><img alt="038548755X" class="demo cursor" onclick="currentSlide(38)" src="{{ url_for('static',filename='E/E_038548755X.png') }}" style="width:100%"></div><div class="column"><img alt="038549744X" class="demo cursor" onclick="currentSlide(39)" src="{{ url_for('static',filename='E/E_038549744X.png') }}" style="width:100%"></div><div class="column"><img alt="039914255X" class="demo cursor" onclick="currentSlide(40)" src="{{ url_for('static',filename='E/E_039914255X.png') }}" style="width:100%"></div><div class="column"><img alt="039914613X" class="demo cursor" onclick="currentSlide(41)" src="{{ url_for('static',filename='E/E_039914613X.png') }}" style="width:100%"></div><div class="column"><img alt="039952276X" class="demo cursor" onclick="currentSlide(42)" src="{{ url_for('static',filename='E/E_039952276X.png') }}" style="width:100%"></div><div class="column"><img alt="042518742X" class="demo cursor" onclick="currentSlide(43)" src="{{ url_for('static',filename='E/E_042518742X.png') }}" style="width:100%"></div><div class="column"><img alt="043912042X" class="demo cursor" onclick="currentSlide(44)" src="{{ url_for('static',filename='E/E_043912042X.png') }}" style="width:100%"></div><div class="column"><img alt="044100556X" class="demo cursor" onclick="currentSlide(45)" src="{{ url_for('static',filename='E/E_044100556X.png') }}" style="width:100%"></div><div class="column"><img alt="044920099X" class="demo cursor" onclick="currentSlide(46)" src="{{ url_for('static',filename='E/E_044920099X.png') }}" style="width:100%"></div><div class="column"><img alt="048627733X" class="demo cursor" onclick="currentSlide(47)" src="{{ url_for('static',filename='E/E_048627733X.png') }}" style="width:100%"></div><div class="column"><img alt="050552287X" class="demo cursor" onclick="currentSlide(48)" src="{{ url_for('static',filename='E/E_050552287X.png') }}" style="width:100%"></div><div class="column"><img alt="051788433X" class="demo cursor" onclick="currentSlide(49)" src="{{ url_for('static',filename='E/E_051788433X.png') }}" style="width:100%"></div><div class="column"><img alt="055315723X" class="demo cursor" onclick="currentSlide(50)" src="{{ url_for('static',filename='E/E_055315723X.png') }}" style="width:100%"></div><div class="column"><img alt="055323370X" class="demo cursor" onclick="currentSlide(51)" src="{{ url_for('static',filename='E/E_055323370X.png') }}" style="width:100%"></div><div class="column"><img alt="055329024X" class="demo cursor" onclick="currentSlide(52)" src="{{ url_for('static',filename='E/E_055329024X.png') }}" style="width:100%"></div><div class="column"><img alt="055334949X" class="demo cursor" onclick="currentSlide(53)" src="{{ url_for('static',filename='E/E_055334949X.png') }}" style="width:100%"></div><div class="column"><img alt="055356658X" class="demo cursor" onclick="currentSlide(54)" src="{{ url_for('static',filename='E/E_055356658X.png') }}" style="width:100%"></div><div class="column"><img alt="055384007X" class="demo cursor" onclick="currentSlide(55)" src="{{ url_for('static',filename='E/E_055384007X.png') }}" style="width:100%"></div><div class="column"><img alt="059050391X" class="demo cursor" onclick="currentSlide(56)" src="{{ url_for('static',filename='E/E_059050391X.png') }}" style="width:100%"></div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+</html>

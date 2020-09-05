@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Search Books</title>
+        <!-- COPY/PASTE BOKEHJS RESOURCES HERE -->
+        <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.2.min.js"
+        crossorigin="anonymous"></script>
+		<script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.0.2.min.js"
+        crossorigin="anonymous"></script>
+		<script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.0.2.min.js"
+        crossorigin="anonymous"></script>
+        <!--{{script|safe}}-->
+        <style>
+		table, th, td {
+  		border: 0.5px solid black;
+		}
+		.tooltip {
+  		position: relative;
+  		display: inline-block;
+  		border-bottom: 1px dotted black;
+		}
+
+		.tooltip .tooltiptext {
+  		visibility: hidden;
+  		width: 120px;
+  		background-color: black;
+  		color: #fff;
+  		text-align: center;
+  		border-radius: 6px;
+  		padding: 5px 0;
+
+  		/* Position the tooltip */
+  		position: absolute;
+  		z-index: 1;
+		}
+
+		.tooltip:hover .tooltiptext {
+  		visibility: visible;
+		}
+		</style>
+    </head>
+    <body>
+      <!--https://openlibrary.org/dev/docs/api/covers-->
+      <img src="{{bookisbn}}"/>
+    	<h2>{{bookdes|safe}}</h2>
+      <h3>{{bookdes1|safe}}</h3>
+      <h4>The Similar Books</h4>
+      <table>
+      {% for i in booksim%}
+      <tr>
+      <td> 
+      {{i}}   
+      </td>
+      </tr>
+      {% endfor %}
+      </table>
+      <h4>The Recommend Books</h4>
+      <table>
+	    <tr>	
+	    {% for item in bimg[:5]%}
+	    <td> 
+	    <div class="tooltip">	
+	       <img src="{{item[0]|safe}}" alt="{{item[1]|safe}}"/><span class="tooltiptext">{{item[1]|safe}}</span>
+	    </div>   
+	    </td>   
+	    {% endfor %}
+  		</tr>
+  		<tr>
+      {% for item in bimg[5:]%}
+      <td> 
+      <div class="tooltip">	
+	       <img src="{{item[0]|safe}}" alt="{{item[1]|safe}}"/><span class="tooltiptext">{{item[1]|safe}}</span>
+	    </div>   
+	    </td>
+	    {% endfor %}
+      </tr>
+		</table>
+    <br>
+    <ul><a href="/"><h4>Home</h4></a></ul>
+		</body>
+</html>
